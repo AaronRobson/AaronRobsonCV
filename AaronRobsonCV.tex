@@ -1,5 +1,4 @@
-%\documentclass[margin,11pt]{res}
-\documentclass[line,margin]{res} 
+\documentclass[line,margin]{res}
 %\documentclass{moderncv}
 %\documentclass[a4paper,11pt]{article}
 \special{papersize=210mm,297mm}
@@ -12,11 +11,8 @@
 %http://www.math.nyu.edu/student_resources/res.cls
 %http://www.mcnabbs.org/andrew/linux/latexres/
 
-%http://blog.oak-tree.us/index.php/2009/11/25/latex-cv-part1
-
 \usepackage[hyphens]{url}
 \usepackage[colorlinks=false]{hyperref}
-%so when they are printed they are black instead of the grayscale equilivant of blue or whatever
 
 %\usepackage{setspace}
 %\doublespace
@@ -30,8 +26,9 @@
 %custom shortcuts
 \newcommand{\CV}{Curriculum Vit\ae}
 
-%http://www.devdaily.com/blog/post/latex/what-kinds-of-dashes-hyphens-are-available-with-latex
 \newcommand{\ampersand}{\&}
+
+%http://www.devdaily.com/blog/post/latex/what-kinds-of-dashes-hyphens-are-available-with-latex
 \newcommand{\dashsep}{--}
 \newcommand{\rangesep}{\dashsep}
 
@@ -63,46 +60,34 @@
 \begin{resume}
 
 \section{Personal Statement}
-I am a software developer who endeavours to produce robust and maintainable code.
-I pride myself on self-teaching; I have taught myself several programming languages and paradigms in my own time.
+I would consider myself as an organised programmer, keeping on top of open issues, logging them with detailed reproduction steps so myself or a colleague can hit the ground running resolving them. I find this optimises the team's work-flow on projects.
 
-While I have gained much real-world experience with my current employer; I look forward to a new challenge with more powerful development tools and processes.
+I have experience in Python, Delphi, Prolog, SQL, Haskell and typesetting with {\LaTeX}. This has resulted in working on several personal projects including an implementation of John Conway's Game of Life and a numeric base converter.
 
+As much as I enjoy programming I am a social person who enjoys the outdoors and going for a pub lunch with my colleagues. Outside of work I like going on cruises and cycling holidays.
 \section{Employment}
 
 \employer{Digi Europe Ltd.}
-\title{Junior Software Engineer}
-\dates{Sept 2010{\rangesep}Present}
+\title{Software Engineer}
+\dates{2010{\rangesep}Present} %Semptember 2010 onwards.
 \location{Haverhill, Suffolk}
 \begin{position}
-Produce Delphi Pascal software (7{\rangesep}XE) within a team for PC based weigh labeller machines.
-\begin{itemize} \itemsep -2pt %reduce space between items
-	\item Develop new features according to specification on a per customer or general level.
-	\item Prepare and document bug-fixes from user reports and by investigating potential causes of errors.
-	\item Customer installation and troubleshooting.
-	\item Use of version control (Jedi VCS).
-	\item Extensions to XML network communication.
-	\item Gained experience dealing with heavily threaded real-time applications.
-	\item Internal server administration and Technical Support.
-	\item Developed a few internal support programs in Python. \comment{Internal backups, network communication with machines, COM port data receiver and log file analysis.}
-	\item Made an Android app to send product selection commands.
-\end{itemize}
+Developing and maintaining current software whilst building bespoke solutions. Control of and information collection from industrial weighing and labelling machines. Vast experience of meeting customers to discuss future development projects and visiting customer's sites for software maintenance.
+
+I have developed some in-house utilities in Python and Haskell to improve my own work-flow and to help the development team such as a log file analyser.
 \end{position}
 
 \section{Education}
 
 \employer{University of Lincoln}
-\title{Software Engineering B.Sc. --- 2:2 grade}
+\title{Software Engineering B.Sc.} % 2:2 grade
 \dates{2007{\rangesep}2010}
 \location{Lincolnshire}
 \begin{position}
-Technical skills developed through projects, this includes the design and implementation of a blog using ASP.NET and related skills and the backend MySQL database a separate group project where the goal was to create the accommodation booking section of a holiday company website.
+Throughout my time at University I had the opportunity to build a web application, working within a team developing a holiday booking system. I also built my own CRUD Blog.
 
-During the Software Engineering unit I developed my group skills and theoretical knowledge.
-In the Mobile and Distributed Computing unit I was encouraged by the challenge of developing a client server chat program from scratch.
-It built upon TCP to make a standardised protocol for handling messaging with an implementation in {\CSharp}.
-It had changeable user and room names.
-During the final year project developed a natural language analysis program in Python.
+In the Mobile and Distributed Computing unit I learnt a lot by the challenge of developing a {\CSharp} chat program.
+%It had users and rooms which could be renamed.
 \end{position}
 
 \employer{Hills Road Sixth Form College}
@@ -147,56 +132,22 @@ Nine GCSEs grade C and above, including an A* in Maths and an A in both Science 
 \end{comment}
 \end{position}
 
-\section{Experience}
-Have experience in the following programming languages and environments: {\CSharp}, Python (and TkInter), Delphi 7, 2007 and XE, Prolog, JavaScript/Ajax, ASP.NET, HTML, CSS, SQL and database design in MSAccess and MySQL. Inspired by Python's itertools module; learning Lisp (primarily the Scheme dialect).
-Completed several personal projects including an implementation of John Conway's Game of Life and a numeric base converter, built in Delphi Pascal, {\CSharp} and then Python (v2 and subsequently v3).
-I use version control (SVN and Jedi VCS).
-Experience in computer construction, maintenance and troubleshooting. Beginner typesetting with {\LaTeX} (including this CV).
-
 \section{Technical \\ Reading}
-I have read: \\
+Books I have enjoyed reading: \\
 Brain of the Firm,
-Python in a Nutshell (2nd Edt.),
-The Mythical Man-Month (2nd Edt.),
+Python in a Nutshell, %(2nd Edt.),
+The Mythical Man-Month, %(2nd Edt.),
 The Pragmatic Programmer,
-Code Complete (2nd Edt.),
+%Code Complete (2nd Edt.),
 Surely You're Joking Mr Feynman,
-Peopleware (2nd Edt.),
-Death March,
-Facts and Fallacies of Software Engineering,
+Peopleware, %(2nd Edt.),
+%Death March,
+%Facts and Fallacies of Software Engineering,
 Slack,
-The Little Schemer (4th Edt.),
-13 Things That Don't Make Sense,
+%The Little Schemer, %(4th Edt.),
 The Design of Everyday Things,
-Paul Graham essays,
-EWD (Dijkstra essays),
-other assorted essays and dissertations and
-the occasional issue of New Scientist.
-
-I am currently reading: \\
-Practical Common Lisp and
-Programming Pearls.
-
-\section{Interests}
-\begin{itemize} \itemsep -2pt %reduce space between items
-	\item Mountain hiking. %Ben Nevis, Scarfell Pike, Snowden, Lake District and the Swiss Alps.
-	\item Novels Catch-22, Discworld, Sci-fi.
-	\item Supporter of open source software projects; Associate Member of the Free Software Foundation and donator to Python (as AaronR) and VLC.
-	\item Enjoy Coding Horror, XKCD and TED.com videos.
-	\item A wide taste in music.
-	\item Former member of the Scouts and Army Cadets.
-\end{itemize}
-
-%Revelation Space (Alasdair Reynolds)
-%Ubik - Philip K. Dick
-%The Rub\'{a}iy\'{a}t of Omar Khayy\'{a}m (Edward FitzGerald)
-%Ringworld (Larry Niven)
-%Peace and War (Joe Haldeman)
-%A Clockwork Orange (Anthony Burgess)
-%Nineteen Eighty-Four (George Orwell)
-%First Strike, Fall of Reach (Halo --- dunno how far I got with them)
-%The Neutronium Alchemist (Peter F. Hamilton)
-%Rainbows End (Vernor Vinge)
+%Programming Pearls,
+Paul Graham and Dijkstra's essays.
 
 \section{References}
 Available upon request.
