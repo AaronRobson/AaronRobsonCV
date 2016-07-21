@@ -41,14 +41,26 @@
 \newcommand{\emailmailto}{mailto:\email}
 \newcommand{\emaillink}{\href{\emailmailto}{\nolinkurl{\email}}}
 
+\newcommand{\githublink}{\url{https://github.com/aaronrobson}}
+
+\newcommand{\linkedinlink}{\url{https://uk.linkedin.com/in/aaronrobson}}
+
+\newcommand{\websitelink}{\url{www.aaronrobson.uk}}
+
 \newcommand{\titledoc}{\CV}
 
-\name{Aaron Robson --- \titledoc}
-\address{\emaillink}
+\name{
+	\noindent\parbox{.5\textwidth}{Aaron Robson --- \titledoc}
+	\parbox{.5\textwidth}{\hfill\emaillink}
+}
+
+\address{
+	\noindent\parbox{.5\textwidth}{\websitelink}
+	\parbox{.5\textwidth}{\hfill\githublink}
+}
 
 \begin{document}
 \begin{resume}
-
 \section{Personal Statement}
 I consider myself to be an organised software developer.
 I do my utmost to keep up with developments in the field, new techniques, libraries and languages; in order to make more informed decisions.
