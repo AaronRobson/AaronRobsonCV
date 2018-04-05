@@ -6,5 +6,4 @@ before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 
 script:
-  - mkdir _build
-  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build AaronRobsonCV.tex
+  - pdflatex AaronRobsonCV.tex
