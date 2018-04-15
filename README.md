@@ -12,7 +12,7 @@ wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.
 pdflatex AaronRobsonCV.tex
 ````
 
-###Windows
+### Windows
 
 1. Download [TeXstudio](http://texstudio.sourceforge.net/).
 2. Open AaronRobsonCV.tex in it.
