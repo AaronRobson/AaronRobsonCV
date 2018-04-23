@@ -4,7 +4,7 @@
 
 ## Instructions
 
-### Trisquel
+### GNU/Linux
 
 ````{bash}
 sudo apt-get install texlive
