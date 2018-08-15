@@ -9,5 +9,5 @@ AaronRobsonCV.pdf: AaronRobsonCV.tex
 
 clean:
 	rm -f *.log
-	rm -f *.div
+	rm -f *.dvi
 	rm -f AaronRobsonCV.pdf
