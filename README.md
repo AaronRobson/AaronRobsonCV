@@ -6,11 +6,16 @@
 
 ### GNU/Linux
 
-````{bash}
+```console
 sudo apt-get install texlive
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex AaronRobsonCV.tex
-````
+```
+
+aka
+```console
+make
+```
 
 ### Windows
 
@@ -18,3 +23,15 @@ pdflatex AaronRobsonCV.tex
 2. Open AaronRobsonCV.tex in it.
 3. Build with F5.
 4. Allow it to download the res.cls package.
+
+### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
+Run this to find what the next tag should be:
+```console
+git tag
+```
+
+Then tag and upload like this:
+```console
+git tag vx.x
+git push --tags
+```
