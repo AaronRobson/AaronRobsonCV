@@ -2,10 +2,10 @@
 
 all: build
 
-build: aaron-robson-cv.pdf
+build: aaronrobson-cv.pdf
 
-aaron-robson-cv.pdf: aaron-robson-cv.tex
-	pdflatex -interaction=nonstopmode -halt-on-error aaron-robson-cv.tex
+aaronrobson-cv.pdf: aaronrobson-cv.tex
+	pdflatex -interaction=nonstopmode -halt-on-error aaronrobson-cv.tex
 
 clean:
-	rm -f *.log *.dvi *.synctex.gz aaron-robson-cv.pdf
+	rm -f *.log *.dvi *.synctex.gz aaronrobson-cv.pdf
