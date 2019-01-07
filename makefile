@@ -8,4 +8,4 @@ AaronRobsonCV.pdf: AaronRobsonCV.tex
 	pdflatex -interaction=nonstopmode -halt-on-error AaronRobsonCV.tex
 
 clean:
-	rm -f *.log *.dvi AaronRobsonCV.pdf
+	rm -f *.log *.dvi *.synctex.gz AaronRobsonCV.pdf
