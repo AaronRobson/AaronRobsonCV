@@ -2,7 +2,7 @@
 
 all: build
 
-build: aaronrobson-cv.pdf
+build: *.pdf
 
 %.pdf: %.tex
 	pdflatex -interaction=nonstopmode -halt-on-error $<
