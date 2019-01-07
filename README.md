@@ -9,7 +9,7 @@
 ```console
 sudo apt-get install texlive
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
-pdflatex AaronRobsonCV.tex
+pdflatex aaron-robson-cv.tex
 ```
 
 aka
@@ -20,7 +20,7 @@ make
 ### Windows
 
 1. Download [TeXstudio](http://texstudio.sourceforge.net/).
-2. Open AaronRobsonCV.tex in it.
+2. Open aaron-robson-cv.tex in it.
 3. Build with F5.
 4. Allow it to download the res.cls package.
 
