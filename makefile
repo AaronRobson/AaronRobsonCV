@@ -1,5 +1,6 @@
 .PHONY: all build clean
 
+.DEFAULT_GOAL := all
 all: build
 
 build: *.pdf
