@@ -20,9 +20,9 @@ make
 ### Windows
 
 1. Download [TeXstudio](http://texstudio.sourceforge.net/).
-2. Open aaronrobson-cv.tex in it.
+2. Open `aaronrobson-cv.tex` in it.
 3. Build with F5.
-4. Allow it to download the res.cls package.
+4. Allow it to download the `res.cls` package.
 
 ### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
 Run this to find what the next tag should be:
