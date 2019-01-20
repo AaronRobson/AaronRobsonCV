@@ -6,14 +6,14 @@
 
 ### GNU/Linux
 
-```console
+```bash
 sudo apt-get install texlive
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex aaronrobson-cv.tex
 ```
 
 aka
-```console
+```bash
 make
 ```
 
@@ -26,12 +26,12 @@ make
 
 ### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
 Run this to find what the next tag should be:
-```console
+```bash
 git tag
 ```
 
 Then tag and upload like this:
-```console
+```bash
 git tag vx.x
 git push --tags
 ```
