@@ -7,10 +7,10 @@ build: *.pdf
 
 %.pdf: %.tex
 ifneq (, $(shell which pdflatex))
-	echo Build locally.
+	@echo Build locally.
 	pdflatex -interaction=nonstopmode -halt-on-error $<
 else
-	echo Build using Docker image.
+	@echo Build using Docker image.
 	docker run --rm -i --user="$(id -u):$(id -g)" --net=none \
 		-v $(PWD):/data \
 		blang/latex:ubuntu \
