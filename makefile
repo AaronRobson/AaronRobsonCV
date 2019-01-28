@@ -6,7 +6,7 @@ all: build
 build: *.pdf
 
 %.pdf: %.tex
-ifeq (, $(wildcard pdflatex))
+ifneq (, $(shell which pdflatex))
 	echo Build locally.
 	pdflatex -interaction=nonstopmode -halt-on-error $<
 else
