@@ -1,11 +1,7 @@
-sudo: required
-
-dist: xenial
-
 language: bash
 
-before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-latex-recommended
+services:
+  docker
 
 script:
   - make
