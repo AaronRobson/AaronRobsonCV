@@ -13,7 +13,7 @@ else
 	@echo Build using Docker image.
 	docker run --rm -i --user="$(id -u):$(id -g)" --net=none \
 		-v $(PWD):/data \
-		blang/latex:ubuntu \
+		blang/latex:ctanbasic \
 		pdflatex $<
 endif
 
