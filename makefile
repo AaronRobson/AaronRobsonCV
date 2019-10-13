@@ -3,6 +3,9 @@
 .DEFAULT_GOAL := all
 all: build
 
+clean:
+	rm -f *.log *.dvi *.synctex.gz *.pdf
+
 build: *.pdf
 
 %.pdf: %.tex
@@ -16,6 +19,3 @@ else
 		blang/latex:ctanbasic \
 		pdflatex $<
 endif
-
-clean:
-	rm -f *.log *.dvi *.synctex.gz *.pdf
