@@ -1,7 +1,5 @@
 # AaronRobsonCV
 
-[![Build Status](https://travis-ci.org/AaronRobson/AaronRobsonCV.svg?branch=master)](https://travis-ci.org/AaronRobson/AaronRobsonCV)
-
 ## Instructions
 
 ### GNU/Linux
