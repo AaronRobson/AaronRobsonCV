@@ -16,7 +16,9 @@ ifneq (, $(shell which pdflatex))
 	pdflatex -interaction=nonstopmode -halt-on-error $<
 else
 	@echo Build using Docker image.
-	docker run --rm -i --user="$(id -u):$(id -g)" --net=none \
+	docker run --rm -i \
+		--user $(id -u ${USER}):$(id -g ${USER}) \
+		--net=none \
 		--read-only \
 		-v $(PWD):/data \
 		blang/latex:ctanbasic \

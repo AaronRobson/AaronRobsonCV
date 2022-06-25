@@ -4,13 +4,26 @@
 
 ### GNU/Linux
 
+#### Using pdflatex
 ```bash
 sudo apt-get install texlive
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex aaronrobson-cv.tex
 ```
 
-aka
+#### Using docker
+```bash
+docker run --rm -i \
+    --user $(id -u ${USER}):$(id -g ${USER}) \
+    --net=none \
+    --read-only \
+    -v $(pwd):/data \
+    blang/latex:ctanbasic \
+    pdflatex aaronrobson-cv.tex
+```
+
+#### Automatically
+Use locally installed `pdflatex` if present and if not try `docker`.
 ```bash
 make
 ```
