@@ -5,14 +5,14 @@
 ### GNU/Linux
 
 #### Using pdflatex
-```bash
+```sh
 sudo apt-get install texlive
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex aaronrobson-cv.tex
 ```
 
 #### Using docker
-```bash
+```sh
 docker run --rm -i \
     --user $(id -u ${USER}):$(id -g ${USER}) \
     --net=none \
@@ -24,7 +24,7 @@ docker run --rm -i \
 
 #### Automatically
 Use locally installed `pdflatex` if present and if not try `docker`.
-```bash
+```sh
 make
 ```
 
@@ -37,12 +37,12 @@ make
 
 ### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
 Run this to find what the next tag should be:
-```bash
+```sh
 git tag
 ```
 
 Then tag and upload like this:
-```bash
+```sh
 git tag vx.x
 git push --tags
 ```
@@ -50,12 +50,12 @@ git push --tags
 Raise the PR in github, but don't merge it yet (https://stackoverflow.com/questions/60597400/how-to-do-a-fast-forward-merge-on-github).
 
 Then merge locally with:
-```bash
-git checkout your-new-branch && git merge master --ff-only
+```sh
+git checkout master && git merge your-new-branch --ff-only
 ```
 
 And upload like this:
-```bash
+```sh
 git checkout master
 git push
 ```
