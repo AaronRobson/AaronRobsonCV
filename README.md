@@ -36,26 +36,7 @@ make
 4. Allow it to download the `res.cls` package.
 
 ### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
-Run this to find what the next tag should be:
-```sh
-git tag
-```
-
-Then tag and upload like this:
-```sh
-git tag vx.x
-git push --tags
-```
-
-Raise the PR in github, but don't merge it yet (https://stackoverflow.com/questions/60597400/how-to-do-a-fast-forward-merge-on-github).
-
-Then merge locally with:
-```sh
-git checkout master && git merge your-new-branch --ff-only
-```
-
-And upload like this:
-```sh
-git checkout master
-git push
-```
+Make a change in a branch and push to github.
+Have the PR merged to master.
+A sutiable semantic version should be produced and the release produced here
+https://github.com/AaronRobson/AaronRobsonCV/releases/latest/
