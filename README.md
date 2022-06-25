@@ -46,3 +46,16 @@ Then tag and upload like this:
 git tag vx.x
 git push --tags
 ```
+
+Raise the PR in github, but don't merge it yet (https://stackoverflow.com/questions/60597400/how-to-do-a-fast-forward-merge-on-github).
+
+Then merge locally with:
+```bash
+git checkout your-new-branch && git merge master --ff-only
+```
+
+And upload like this:
+```bash
+git checkout master
+git push
+```
