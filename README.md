@@ -6,7 +6,7 @@
 
 #### Using pdflatex
 ```sh
-sudo apt-get install texlive
+sudo apt-get install texlive-latex-extra
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex aaronrobson-cv.tex
 ```
