@@ -38,5 +38,5 @@ make
 ### To push to the [aaronrobson.uk/cv](http://aaronrobson.uk/cv/) website
 Make a change in a branch and push to github.
 Have the PR merged to master.
-A sutiable semantic version should be produced and the release produced here
+A suitable semantic version should be produced and the release produced here
 https://github.com/AaronRobson/AaronRobsonCV/releases/latest/
