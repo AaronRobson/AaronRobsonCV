@@ -35,7 +35,7 @@ make
 3. Build with `F5`.
 4. Allow it to download the `res.cls` package.
 
-### To push to the [aaronrobson.uk/cv](http://www.aaronrobson.uk/cv/) website
+### To push to the [aaronrobson.uk/cv](http://aaronrobson.uk/cv/) website
 Make a change in a branch and push to github.
 Have the PR merged to master.
 A sutiable semantic version should be produced and the release produced here
