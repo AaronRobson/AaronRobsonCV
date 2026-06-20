@@ -5,6 +5,7 @@
 ### GNU/Linux
 
 #### Using pdflatex
+
 ```sh
 sudo apt-get install texlive-latex-extra
 wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
@@ -12,6 +13,7 @@ pdflatex aaronrobson-cv.tex
 ```
 
 #### Using docker
+
 ```sh
 docker run --rm -i \
     --user $(id -u ${USER}):$(id -g ${USER}) \
@@ -23,7 +25,9 @@ docker run --rm -i \
 ```
 
 #### Automatically
+
 Use locally installed `pdflatex` if present and if not try `docker`.
+
 ```sh
 make
 ```
@@ -36,7 +40,8 @@ make
 4. Allow it to download the `res.cls` package.
 
 ### To push to the [aaronrobson.uk/cv](http://aaronrobson.uk/cv/) website
+
 Make a change in a branch and push to github.
 Have the PR merged to master.
 A suitable semantic version should be produced and the release produced here
-https://github.com/AaronRobson/AaronRobsonCV/releases/latest/
+<https://github.com/AaronRobson/AaronRobsonCV/releases/latest/>
