@@ -8,7 +8,7 @@
 
 ```sh
 sudo apt-get install texlive-latex-extra
-wget -O res.cls http://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
+wget -O res.cls https://www.ctan.org/tex-archive/macros/latex/contrib/resume/res.cls
 pdflatex aaronrobson-cv.tex
 ```
 
@@ -34,12 +34,12 @@ make
 
 ### Windows
 
-1. Download [TeXstudio](http://texstudio.sourceforge.net/).
+1. Download [TeXstudio](https://texstudio.sourceforge.net/).
 2. Open `aaronrobson-cv.tex` in it.
 3. Build with `F5`.
 4. Allow it to download the `res.cls` package.
 
-### To push to the [aaronrobson.uk/cv](http://aaronrobson.uk/cv/) website
+### To push to the [aaronrobson.uk/cv](https://aaronrobson.uk/cv/) website
 
 Make a change in a branch and push to github.
 Have the PR merged to master.
