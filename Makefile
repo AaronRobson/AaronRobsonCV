@@ -1,11 +1,16 @@
 .DEFAULT_GOAL := all
 
 .PHONY: all
-all: build
+all: check build
 
 .PHONY: clean
 clean:
 	rm -f *.log *.dvi *.synctex.gz *.pdf
+
+.PHONY: check
+check: *.tex
+check:
+	lacheck *.tex
 
 .PHONY: build
 build: *.pdf
