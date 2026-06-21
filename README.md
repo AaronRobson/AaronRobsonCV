@@ -16,7 +16,7 @@ pdflatex aaronrobson-cv.tex
 
 ```sh
 docker run --rm -i \
-    --user $(id -u ${USER}):$(id -g ${USER}) \
+    --user $(id -u):$(id -g) \
     --net=none \
     --read-only \
     -v $(pwd):/data \

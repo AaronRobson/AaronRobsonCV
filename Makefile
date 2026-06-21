@@ -22,7 +22,7 @@ ifneq (, $(shell which pdflatex))
 else
 	@echo Build using Docker image.
 	docker run --rm -i \
-		--user $(id -u ${USER}):$(id -g ${USER}) \
+		--user $$(id -u):$$(id -g) \
 		--net=none \
 		--read-only \
 		-v $(PWD):/data \
